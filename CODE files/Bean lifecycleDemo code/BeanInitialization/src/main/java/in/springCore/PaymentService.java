@@ -12,4 +12,7 @@ public class PaymentService {
     public PaymentService() {
         System.out.println("PaymentService()");
     }
+    public void pay(){
+        System.out.println("payment done");
+    }
 }

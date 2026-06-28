@@ -12,6 +12,8 @@ ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.cl
 
 OrderService orderService =  context.getBean(OrderService.class);
 
-        PaymentService  paymentService =  context.getBean(PaymentService.class);
+//PaymentService  paymentService =  context.getBean(PaymentService.class);   //  jab maangenge inhe toh IOC object banaayega in sace od @Lazy
+       System.out.println("Payment service not started yet");
+        orderService.placeOrder();
     }
 }
