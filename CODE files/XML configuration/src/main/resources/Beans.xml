@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<!--    <bean id="paymentService" class="in.springCOre.payment.PaymentService">-->
+<!--           jab koi value pass karni ho toh yahan karo by using <constructor-arg value="pased-value"/>-->
+<!--            and also name ya id se ham multiple constructor-arg ko map bhi kar skte hain   -->
+<!--    </bean>-->
+
+
+<!--Jab constructor injection karna ho toh-->
+<!--<bean id="orderService" class="in.springCOre.OrderService" >-->
+<!--<constructor-arg ref="paymentService"/>-->
+<!--</bean>-->
+
+
+<!--    For setter injection-->
+<!--    <bean id="orderService" class="in.springCOre.OrderService">-->
+<!--        <property name="paymentService" ref="paymentService"/>   apne aap wo method ko catch kar lega translate kar ke-->
+<!--   </bean> -->
+
+
+
+
+<!--     Jab do type ke paymentService hogi   -->
+    <bean id="cardPayment" class="in.springCOre.payment.PaymentServiceCard"/>
+    <bean id="upiPayment" class="in.springCOre.payment.PaymentServiceUpi"/>
+
+    <bean id="orderService" class="in.springCOre.OrderService">
+        <constructor-arg ref="cardPayment"/>
+    </bean>
+
+</beans>
