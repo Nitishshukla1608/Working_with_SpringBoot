@@ -1,12 +1,15 @@
 package com.taskflow.crudSpringBootDemo.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Student {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
@@ -14,6 +17,18 @@ public class Student {
     private String email;
     private int rollno;
     private String subject;
+
+
+
+    public Boolean getDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(Boolean deleted) {
+        this.deleted = deleted;
+    }
+
+    private Boolean deleted;
 
     // Default constructor (required by Jackson)
     public Student() {
