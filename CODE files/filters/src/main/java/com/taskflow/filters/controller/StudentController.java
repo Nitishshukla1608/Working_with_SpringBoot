@@ -1,6 +1,7 @@
 package com.taskflow.filters.controller;
 
-import com.taskflow.filters.entity.Student;
+import com.taskflow.filters.dto.Student;
+import com.taskflow.filters.dto.StudentResponseDto;
 import com.taskflow.filters.service.StudentService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,8 +19,8 @@ public class StudentController {
     }
 
     @PostMapping
-    public ResponseEntity<String> createStudent(@RequestBody Student student) {
-        studentService.createStudent(student);
-        return ResponseEntity.ok().body("Success");
+    public ResponseEntity<StudentResponseDto> createStudent(@RequestBody Student student) {
+       StudentResponseDto responseDto =  studentService.createStudent(student);
+        return ResponseEntity.ok().body(responseDto);
     }
 }

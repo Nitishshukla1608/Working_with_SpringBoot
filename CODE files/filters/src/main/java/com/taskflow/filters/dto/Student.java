@@ -1,4 +1,4 @@
-package com.taskflow.filters.entity;
+package com.taskflow.filters.dto;
 
 public class Student {
     private int id;

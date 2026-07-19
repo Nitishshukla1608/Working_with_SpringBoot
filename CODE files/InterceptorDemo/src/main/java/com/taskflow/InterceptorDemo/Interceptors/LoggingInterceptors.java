@@ -1,4 +1,10 @@
 package com.taskflow.InterceptorDemo.Interceptors;
 
-public class LoggingInterceptors {
+import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.HandlerInterceptor;
+
+@Component
+public class LoggingInterceptors implements HandlerInterceptor {
+
 }
+
