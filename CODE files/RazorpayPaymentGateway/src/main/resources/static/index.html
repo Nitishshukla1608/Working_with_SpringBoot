@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razorpay Payment Demo</title>
+</head>
+<body>
+
+<button id="pay-button">Pay Now</button>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<script>
+    document.getElementById("pay-button").addEventListener("click", function () {
+
+        fetch("http://localhost:8080/api/payments/create?amount=1000&currency=INR", {
+            method: "POST"
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to create order");
+            }
+            return response.json();
+        })
+        .then(order => {
+
+            const options = {
+                key: "rzp_test_E1VHn4r8R09Rak",   // Apni Test Key
+                amount: order.amount,
+                currency: order.currency,
+                name: "TaskFlow",
+                description: "Test Payment",
+                order_id: order.id,
+
+                handler: function (response) {
+                    alert(
+                        "Payment Successful!\n\n" +
+                        "Payment ID: " + response.razorpay_payment_id +
+                        "\nOrder ID: " + response.razorpay_order_id +
+                        "\nSignature: " + response.razorpay_signature
+                    );
+                },
+
+                prefill: {
+                    name: "Test User",
+                    email: "test@example.com",
+                    contact: "9999999999"
+                },
+
+                theme: {
+                    color: "#3399cc"
+                }
+            };
+
+            const rzp = new Razorpay(options);
+            rzp.open();
+
+        })
+        .catch(error => {
+            console.error(error);
+            alert("Error: " + error.message);
+        });
+
+    });
+</script>
+
+</body>
+</html>
