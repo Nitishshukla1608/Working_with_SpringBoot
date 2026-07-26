@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f36937e-6212-4eb8-9a3f-ed735cc0e99e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../AopCustomAnnotations/src/main/java/com/taskflow/Aop_Demo/annotations/TrackExecutionTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AopCustomAnnotations/src/main/java/com/taskflow/Aop_Demo/dto/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/taskflow/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/taskflow/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PointCuts Expression/src/main/java/com/taskflow/Aop_Demo/aspect/ApplicationPointcuts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PointCuts Expression/src/main/java/com/taskflow/Aop_Demo/dto/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PointCuts Expression/src/main/java/com/taskflow/Aop_Demo/service/subservice/Dummy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aop_Demo/src/main/java/com/taskflow/Aop_Demo/AopDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Aop_Demo/src/main/java/com/taskflow/Aop_Demo/AopDemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aop_Demo/src/main/java/com/taskflow/Aop_Demo/aspect/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Aop_Demo/src/main/java/com/taskflow/Aop_Demo/aspect/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aop_Demo/src/main/java/com/taskflow/Aop_Demo/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Aop_Demo/src/main/java/com/taskflow/Aop_Demo/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RazorpayPaymentGateway/razorpay-frontend/src/Payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../RazorpayPaymentGateway/razorpay-frontend/src/Payment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RazorpayProject/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RazorpayProject/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RazorpayProject/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RazorpayProject/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RazorpayProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RazorpayProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RazorpayProject/.idea/workspace.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="3H20vNblIJYuw03Mt11nzIe9gNJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "D:/DEVELOPMENT  materials/BACKEND (JAVA)/JAVA backend/SpringBoot/CODE files/JdbcDemo/src/main/java/com/taskflow/Main.java"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f36937e-6212-4eb8-9a3f-ed735cc0e99e" name="Changes" comment="" />
+      <created>1785051090038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1785051090038</updated>
+    </task>
+    <servers />
+  </component>
+</project>

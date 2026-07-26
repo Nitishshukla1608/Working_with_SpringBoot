@@ -7,7 +7,7 @@ public class StudentService {
     public String createStudent(){
 
         System.out.println("Student saved");
-        return "Student saved";
+    return "student saved ....";
     }
 
 }
